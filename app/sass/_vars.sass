@@ -1,81 +1,86 @@
-$fontOpenSans: 'OpenSansRegular', sans-serif
-$mainFont: 'Roboto', sans-serif
+$ubuntuBold: 'UbuntuBold'
+$ubuntuRegular: 'UbuntuRegular', sans-serif
+$ptsansBold: 'PTSansBold', sans-serif
+$ptsansRegular: 'PTSansRegular', sans-serif
+$gothamProLight: 'GothamProLight', sans-serif
+$gothamProBold: 'GothamProBold', sans-serif
 
-$mainColor: #696969
+$logoVadimColor: #e8423b
+$logoGorenkoColor: #d7353d
+
+$logoBiznesColor: #eb443a /*main header text color*/
+
+$headerNumberColor: #ec453a
+$headerTextColor: #757575
+
+$buttonGradientStart: #ef473a
+$buttonGradientEnd: #cc2e3e
+$buttonBorder: #db393c
+
+$sectionAboutColor: #ee463a /*BorderSectionSession*/
+$sectionAboutDividerColor: #e0e0e0
+
+$mainTextSectionColor: #df3b3c
+$mainTextColor: #757575
+$mainTextTitleColor: #3a3a3a
+
+$linkDecorationLineColor: #f1a9a9
+
+$sectionButtonBorderColor: #dd3a3c
+$sectionSitataTextColor: #353535
+
+$mainWhiteTextColor: #ffffff
+
+$dateSectionColor: #b31e14
+$dateSectionColor: #cdcdcd
+
+$sectionTextColor: #8c8c8c
+$sectionDividerColor: #eaeaea
+
+$sectionStoryTextGradientColor0: #757575
+$sectionStoryTextGradientColor1: #979797
+$sectionStoryTextGradientColor2: #b5b5b5
+$sectionStoryTextGradientColor3: #e0e0e0
+$sectionStoryTextGradientColor4: #f4f4f4
 
 body
 	margin: 0
 	padding: 0
-	width: 100%
-	color: $mainColor
-	font-family: $mainFont, sans-serif
-	font-size: 16px
-	font-weight: 600
+	width: 1365px
 input,
 textarea
 	outline: none
-	border: 2px solid $darkColor
-	font-size: 14px
-	font-weight: 500
-	padding: 3px 0 3px 5px
 button
 	outline: none
-	float: right
-	width: 25px
-	height: 25px
-	border-radius: 50%
-	border: 3px solid $darkIcons
-	display: flex
-	align-items: center
-	justify-content: center
 	cursor: pointer
-	background-color: transparent
-	i
-		font-size: 15px!important
-		font-weight: 500!important
-		color: $darkIcons!important
-h1
-	font: $fontOpenSans
-	font-weight: 700
-	font-size: 30px
-	color: $darkIcons
-	text-transform: uppercase
-h2
-	font-family: $fontOpenSans
-	font-weight: 700
-	font-size: 30px
-	color: $menuColor
-	text-transform: uppercase
-	margin: 10px
-h3
-	font-family: $fontOpenSans
-	font-size: 23px
-	font-weight: 700
-	color: $menuColor
-	margin: 5px
-h4
-	font-family: $fontOpenSans
-	font-size: 17px
-	font-weight: 700
-	color: $darkColor
-	margin: 10px 0
-	padding: 0
 
+p
+	margin: 0
+	padding: 0
+h1
+	text-transform: uppercase
+	font-family: $ubuntuBold
+	font-size: 36px
+	color: $mainTextTitleColor
+	line-height: 36px
+h2
+h3
+h4
 ul
 	list-style-type: none
 	padding: 0
-	margin: 0s
-a
-	text-transform: uppercase
-	text-decoration: none!important
-	color: $menuColor!important
-	font-family: $fontRoboto, 16px
-	font-weight: 700
+	margin: 0
+li
 	list-style-type: none
+	margin: 0
+	padding: 0
+a
+	list-style-type: none
+	margin: 0
+	padding: 0
 
 .container-fluid
 	padding: 0
-
 .mt-20
 	margin-top: 20px
 .mt-50
@@ -87,15 +92,27 @@ a
 .mb-100
 	margin-bottom: 100px
 
-=btn($mainColor, $borderColor, $textColor)
-	display: block
-	width: 170px
-	height: 40px
-	text-align: center
-	line-height: 40px
-	border-radius: 40px
-	border: 1px solid $borderColor
-	background-color: $mainColor
-	color: $textColor
-	text-transform: uppercase
-	font-size: 14px
+.PA
+	position: absolute
+	top: 0
+	left: 0
+
+.sectionTitleNumber
+		margin-top: 97px	
+		position: relative	
+		display: flex
+		align-items: center
+		div
+			display: inline-block
+			p
+				color: $sectionAboutColor
+				font-family: $ubuntuBold
+				font-size: 12px
+				line-height: 12px
+		.sectionTitleNumberLine
+			margin-left: 22px
+			margin-right: 19px
+			width: 115px
+			height: 1px
+			background-color: $sectionAboutDividerColor
+
